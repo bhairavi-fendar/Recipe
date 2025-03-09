@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Blog</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+  font-family:  "Comic Sans MS", cursive;
+  background-color: #f8f9fa;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Tahoma;
+}
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Recipe Blog</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Recipes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section text-center text-black d-flex justify-content-center align-items-center">
+    <div class="hero-content">
+      <h1 class="display-0">Welcome to Recipe Blog</h1>
+      <p class="lead">Discover the best recipes from around the world.</p>
+      <a href="#recipes" class="btn btn-primary btn-lg text-black">Explore Recipes</a>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="container my-5" id="recipes">
+    <h1 class="text-center mb-5 fade-in">Explore Delicious Recipes</h1>
+    <div class="row">
+      <!-- Recipe Card 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow recipe-card">          
+          <div class="card-body">
+            <h5 class="card-title">Creamy Pasta Alfredo</h5>
+            <p class="card-text">A rich and creamy pasta dish with Parmesan cheese and garlic.</p>
+            <button class="btn btn-primary text-black" data-bs-toggle="modal" data-bs-target="#recipe1">View Recipe</button>
+          </div>
+        </div>
+      </div>
+      <!-- Recipe Card 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow recipe-card">
+          
+          <div class="card-body">
+            <h5 class="card-title">Spicy Chicken Tikka</h5>
+            <p class="card-text">Juicy grilled chicken marinated in Indian spices.</p>
+            <button class="btn btn-primary text-black" data-bs-toggle="modal" data-bs-target="#recipe2">View Recipe</button>
+          </div>
+        </div>
+      </div>
+      <!-- Recipe Card 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow recipe-card">
+          
+          <div class="card-body">
+            <h5 class="card-title">Vegetable Stir Fry</h5>
+            <p class="card-text">A healthy mix of fresh vegetables sautéed in soy sauce.</p>
+            <button class="btn btn-primary text-black" data-bs-toggle="modal" data-bs-target="#recipe3">View Recipe</button>
+          </div>
+        </div>
+      </div>
+      <!-- Recipe Card 4 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow recipe-card">
+          <div class="card-body">
+            <h5 class="card-title">Juicy Beef Burgers</h5>
+            <p class="card-text">Classic beef burgers with cheese, lettuce, and tomato.</p>
+            <button class="btn btn-primary text-black" data-bs-toggle="modal" data-bs-target="#recipe4">View Recipe</button>
+          </div>
+        </div>
+      </div>
+      <!-- Recipe Card 5 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow recipe-card">
+          <div class="card-body">
+            <h5 class="card-title">Decadent Chocolate Cake</h5>
+            <p class="card-text">A moist and rich chocolate cake with frosting.</p>
+            <button class="btn btn-primary text-black" data-bs-toggle="modal" data-bs-target="#recipe5">View Recipe</button>
+          </div>
+        </div>
+      </div>
+      <!-- Recipe Card 6 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow recipe-card">          
+          <div class="card-body">
+            <h5 class="card-title">Spicy Shrimp Tacos</h5>
+            <p class="card-text">Tacos filled with spicy shrimp and fresh toppings.</p>
+            <button class="btn btn-primary text-black" data-bs-toggle="modal" data-bs-target="#recipe6">View Recipe</button>
+          </div>
+        </div>
+      </div>
+      <!-- Recipe Card 7 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow recipe-card">
+          
+          <div class="card-body">
+            <h5 class="card-title">Vegetable Lasagna</h5>
+            <p class="card-text">Layered lasagna with fresh vegetables and cheese.</p>
+            <button class="btn btn-primary text-black" data-bs-toggle="modal" data-bs-target="#recipe7">View Recipe</button>
+          </div>
+        </div>
+      </div>
+      <!-- Recipe Card 8 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow recipe-card">     
+          <div class="card-body">
+            <h5 class="card-title">Fresh Fruit Salad</h5>
+            <p class="card-text">A refreshing mix of seasonal fruits.</p>
+            <button class="btn btn-primary text-black" data-bs-toggle="modal" data-bs-target="#recipe8">View Recipe</button>
+          </div>
+        </div>
+      </div>
+      <!-- Recipe Card 9 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow recipe-card">          
+          <div class="card-body">
+            <h5 class="card-title">Margherita Pizza</h5>
+            <p class="card-text">Classic Italian pizza with fresh mozzarella and basil.</p>
+            <button class="btn btn-primary text-black" data-bs-toggle="modal" data-bs-target="#recipe9">View Recipe</button>
+          </div>
+        </div>
+      </div>
+
+      
+  </main>
+
+  <!-- About Section -->
+  <section class="container my-5 fade-in">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>About Us</h2>
+        <p>Welcome to our recipe blog! We are passionate about cooking and sharing delicious recipes from around the world. Join us on this culinary journey!</p>
+      </div>
+      <div class="col-md-6">
+        <img src="images/about.webp" class="img-fluid rounded" alt="About Us Image">
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4">
+    <p>&copy; 2025 Recipe Blog. All rights reserved.</p>
+    <div>
+      <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+      <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+
+  <!-- Recipe Modals -->
+  <!-- Modal 1: Creamy Pasta Alfredo -->
+  <div class="modal fade" id="recipe1" tabindex="-1" aria-labelledby="recipe1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="recipe1Label">Creamy Pasta Alfredo</h5>
+          <img src="https://thedefineddish.com/wp-content/uploads/2023/05/1L8A3824.jpg"  height="10%" width="20%" align="align-items-center">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h6>Ingredients:</h6>
+          <ul>
+            <li>200g fettuccine pasta</li>
+            <li>2 tbsp butter</li>
+            <li>1 cup heavy cream</li>
+            <li>1 cup grated Parmesan cheese</li>
+            <li>2 cloves garlic, minced</li>
+            <li>Salt and pepper to taste</li>
+          </ul>
+          <h6>Instructions:</h6>
+          <ol>
+            <li>Cook the pasta according to package instructions.</li>
+            <li>In a pan, melt butter and sauté garlic until fragrant.</li>
+            <li>Add heavy cream and bring to a simmer.</li>
+            <li>Stir in Parmesan cheese until melted and smooth.</li>
+            <li>Toss the cooked pasta in the sauce and season with salt and pepper.</li>
+            <li>Serve hot and enjoy!</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Spicy Chicken Tikka -->
+  <div class="modal fade" id="recipe2" tabindex="-1" aria-labelledby="recipe2Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="recipe2Label">Spicy Chicken Tikka</h5>
+          <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2022/06/chicken-tikka-kebab-recipe.webp "  height="20%" width="20%" align="align-items-center">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h6>Ingredients:</h6>
+          <ul>
+            <li>500g chicken breast</li>
+            <li>1 cup yogurt</li>
+            <li>2 tbsp tikka masala</li>
+            <li>1 tbsp ginger-garlic paste</li>
+            <li>1 tbsp lemon juice</li>
+            <li>Salt to taste</li>
+          </ul>
+          <h6>Instructions:</h6>
+          <ol>
+            <li>Marinate chicken with yogurt, tikka masala, ginger-garlic paste, lemon juice, and salt for 2 hours.</li>
+            <li>Grill the chicken until fully cooked and charred.</li>
+            <li>Serve with naan or rice.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add more modals for other recipes following the same structure -->
+<!-- Modal 3: Vegetable Stir Fry -->
+<div class="modal fade" id="recipe3" tabindex="-1" aria-labelledby="recipe3Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="recipe3Label">Vegetable Stir Fry</h5>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_ZRkUfrveFnAgNkXzDdxYx0AYDOn_Gw4Jwg&s"  height="10%" width="20%" align="align-items-center">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6>Ingredients:</h6>
+        <ul>
+          <li>2 cups mixed vegetables (broccoli, bell peppers, carrots, snap peas)</li>
+          <li>2 tbsp soy sauce</li>
+          <li>1 tbsp sesame oil</li>
+          <li>1 tbsp olive oil</li>
+          <li>2 cloves garlic, minced</li>
+          <li>1 tsp ginger, minced</li>
+          <li>1 tbsp honey</li>
+          <li>1 tsp cornstarch (optional, for thickening)</li>
+        </ul>
+        <h6>Instructions:</h6>
+        <ol>
+          <li>Heat olive oil and sesame oil in a large pan or wok.</li>
+          <li>Add garlic and ginger, sauté for 1 minute.</li>
+          <li>Add mixed vegetables and stir fry for 5-7 minutes until tender-crisp.</li>
+          <li>In a small bowl, mix soy sauce, honey, and cornstarch. Pour over vegetables.</li>
+          <li>Cook for 2-3 minutes until the sauce thickens. Serve hot.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 4: Juicy Beef Burgers -->
+<div class="modal fade" id="recipe4" tabindex="-1" aria-labelledby="recipe4Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="recipe4Label">Juicy Beef Burgers</h5>
+        <img src="https://kitchenatics.com/wp-content/uploads/2020/08/Two-homemade-beef-burgers-1.jpg"  height="10%" width="20%" align="align-items-center">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6>Ingredients:</h6>
+        <ul>
+          <li>500g ground beef</li>
+          <li>1 tsp salt</li>
+          <li>1/2 tsp black pepper</li>
+          <li>1 tsp garlic powder</li>
+          <li>1 tsp onion powder</li>
+          <li>4 burger buns</li>
+          <li>Lettuce, tomato, cheese, and condiments for serving</li>
+        </ul>
+        <h6>Instructions:</h6>
+        <ol>
+          <li>Mix ground beef with salt, pepper, garlic powder, and onion powder.</li>
+          <li>Form into 4 patties.</li>
+          <li>Grill or pan-fry patties for 4-5 minutes per side, or until cooked to your liking.</li>
+          <li>Toast burger buns and assemble with lettuce, tomato, cheese, and condiments.</li>
+          <li>Serve immediately.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 5: Decadent Chocolate Cake -->
+<div class="modal fade" id="recipe5" tabindex="-1" aria-labelledby="recipe5Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="recipe5Label">Decadent Chocolate Cake</h5>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFI1xiUbgEMrcFxJLWtVPBTzAsibMdcisU2w&s"  height="10%" width="20%" align="align-items-center">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6>Ingredients:</h6>
+        <ul>
+          <li>1 3/4 cups all-purpose flour</li>
+          <li>2 cups sugar</li>
+          <li>3/4 cup cocoa powder</li>
+          <li>1 1/2 tsp baking powder</li>
+          <li>1 1/2 tsp baking soda</li>
+          <li>1 tsp salt</li>
+          <li>2 eggs</li>
+          <li>1 cup milk</li>
+          <li>1/2 cup vegetable oil</li>
+          <li>2 tsp vanilla extract</li>
+          <li>1 cup boiling water</li>
+        </ul>
+        <h6>Instructions:</h6>
+        <ol>
+          <li>Preheat oven to 350°F (175°C). Grease and flour two 9-inch cake pans.</li>
+          <li>In a large bowl, mix flour, sugar, cocoa, baking powder, baking soda, and salt.</li>
+          <li>Add eggs, milk, oil, and vanilla. Mix until smooth.</li>
+          <li>Stir in boiling water (batter will be thin). Pour into pans.</li>
+          <li>Bake for 30-35 minutes. Cool completely before frosting.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 6: Spicy Shrimp Tacos -->
+<div class="modal fade" id="recipe6" tabindex="-1" aria-labelledby="recipe6Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="recipe6Label">Spicy Shrimp Tacos</h5>
+        <img src="https://www.wellplated.com/wp-content/uploads/2018/04/Healthy-Shrimp-Tacos-with-Shrimp-Taco-Sauce.jpg"  height="10%" width="20%" align="align-items-center">
+       
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6>Ingredients:</h6>
+        <ul>
+          <li>500g shrimp, peeled and deveined</li>
+          <li>2 tbsp olive oil</li>
+          <li>1 tsp chili powder</li>
+          <li>1 tsp paprika</li>
+          <li>1/2 tsp cayenne pepper</li>
+          <li>1/2 tsp garlic powder</li>
+          <li>8 small tortillas</li>
+          <li>1 cup shredded cabbage</li>
+          <li>1/2 cup diced tomatoes</li>
+          <li>1/4 cup chopped cilantro</li>
+          <li>Lime wedges for serving</li>
+        </ul>
+        <h6>Instructions:</h6>
+        <ol>
+          <li>In a bowl, toss shrimp with olive oil, chili powder, paprika, cayenne, and garlic powder.</li>
+          <li>Heat a skillet over medium-high heat. Cook shrimp for 2-3 minutes per side until pink.</li>
+          <li>Warm tortillas and fill with shrimp, cabbage, tomatoes, and cilantro.</li>
+          <li>Serve with lime wedges.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 7: Vegetable Lasagna -->
+<div class="modal fade" id="recipe7" tabindex="-1" aria-labelledby="recipe7Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="recipe7Label">Vegetable Lasagna</h5>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqduOyL87L4vCupHEUxGgvCHxUj15HHF28Hw&s"  height="10%" width="20%" align="align-items-center">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6>Ingredients:</h6>
+        <ul>
+          <li>9 lasagna noodles</li>
+          <li>2 cups marinara sauce</li>
+          <li>2 cups ricotta cheese</li>
+          <li>1 cup shredded mozzarella</li>
+          <li>1 cup spinach, chopped</li>
+          <li>1 cup mushrooms, sliced</li>
+          <li>1/2 cup grated Parmesan</li>
+          <li>1 tsp Italian seasoning</li>
+        </ul>
+        <h6>Instructions:</h6>
+        <ol>
+          <li>Preheat oven to 375°F (190°C). Cook lasagna noodles according to package instructions.</li>
+          <li>In a bowl, mix ricotta, spinach, mushrooms, and Italian seasoning.</li>
+          <li>Layer marinara sauce, noodles, ricotta mixture, and mozzarella in a baking dish.</li>
+          <li>Repeat layers and top with Parmesan.</li>
+          <li>Bake for 30 minutes until bubbly and golden.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 8: Fresh Fruit Salad -->
+<div class="modal fade" id="recipe8" tabindex="-1" aria-labelledby="recipe8Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="recipe8Label">Fresh Fruit Salad</h5>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsUCVGg_ZUNygu5nfGtdIC-a1DlmOgduto7Q&s"  height="10%" width="20%" align="align-items-center">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6>Ingredients:</h6>
+        <ul>
+          <li>2 cups strawberries, sliced</li>
+          <li>1 cup blueberries</li>
+          <li>1 cup pineapple chunks</li>
+          <li>1 cup grapes</li>
+          <li>1 kiwi, peeled and sliced</li>
+          <li>1 orange, peeled and segmented</li>
+          <li>1 tbsp honey</li>
+          <li>1 tbsp lime juice</li>
+        </ul>
+        <h6>Instructions:</h6>
+        <ol>
+          <li>Combine all fruits in a large bowl.</li>
+          <li>Drizzle with honey and lime juice.</li>
+          <li>Toss gently to combine. Serve chilled.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 9: Margherita Pizza -->
+<div class="modal fade" id="recipe9" tabindex="-1" aria-labelledby="recipe9Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="recipe9Label">Margherita Pizza</h5>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1bdKKaTySsc4t8ahzTXQIG87Ls_J8ph907w&s"  height="10%" width="20%" align="align-items-center">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6>Ingredients:</h6>
+        <ul>
+          <li>1 pizza dough</li>
+          <li>1/2 cup tomato sauce</li>
+          <li>1 cup fresh mozzarella, sliced</li>
+          <li>1/2 cup fresh basil leaves</li>
+          <li>1 tbsp olive oil</li>
+          <li>Salt and pepper to taste</li>
+        </ul>
+        <h6>Instructions:</h6>
+        <ol>
+          <li>Preheat oven to 475°F (245°C). Roll out pizza dough.</li>
+          <li>Spread tomato sauce over the dough. Top with mozzarella slices.</li>
+          <li>Bake for 10-12 minutes until crust is golden.</li>
+          <li>Top with fresh basil, drizzle with olive oil, and season with salt and pepper.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
